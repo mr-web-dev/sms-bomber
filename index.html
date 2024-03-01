@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qudratulloh Mahammadjonov | 2024">
+    <meta name="name" content="SMS-BOMBER by @hackers_baza">
+    <meta name="description" content="SMS-bomber - telefon raqamlariga avtomatik ravishda bir nechta xabar yuborish imkonini ta'minlovchi veb-sayt yoki dastur. Ushbu vosita, odatda prank maqsadlari uchun ishlatiladi, ammo boshqalar bilan munosabatlarda va yurisdiksiyangizning qonunlariga rioya qilish kerak. Telegram: @hackers_baza Bot: @hackers_baza_bot">
+    <title>SMS-BOMBER</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icon/192-png.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/icon/512-png.png">
+</head>
+<body>
+
+    <!-- loader start -->
+    <section class="loader">
+
+        <div class="container loader__container">
+
+            <div class="loader__img-box">
+                <img src="./img/icon/512-png.png" alt="LOADING" title="LOADING - Yuklanmoqda" class="loader__img" draggable="false">
+            </div>
+            
+        </div>
+
+    </section>
+    <!-- loader end -->
+
+    <!-- main start -->
+    <main class="main visually-hidden">
+
+        <div class="container main__container">
+
+            <div class="main__left">
+
+                <h1 class="main__title">SMS-BOMBER</h1>
+        
+                <p class="main__text">SMS-BOMBER - telefon raqamlariga avtomatik ravishda bir nechta xabar yuborish imkonini ta'minlovchi veb-sayt yoki dastur. Ushbu vosita, odatda prank maqsadlari uchun ishlatiladi, ammo boshqalar bilan munosabatlarda va yurisdiksiyangizning qonunlariga rioya qilish kerak. Telegram: @hackers_baza Bot: @hackers_baza_bot</p>
+        
+                <div class="main__btn-box">
+                    <a href="https://t.me/hackers_baza" class="main__link">Kanal</a>
+                    <a href="https://t.me/hackers_baza_bot" class="main__link">Bot</a>
+                </div>
+                
+            </div>
+
+            <div class="main__right">
+                <div class="main__img-box">
+                    <img src="./img/icon/192.png" alt="Image 192px192" class="main__img" draggable="false">
+                    <img src="./img/icon/192-png.png" alt="Image 192px192 png" class="main__img" draggable="false">
+                    <img src="./img/icon/512.png" alt="Image 512px512" class="main__img" draggable="false">
+                    <img src="./img/icon/512-png.png" alt="Image 512px512 png" class="main__img" draggable="false">
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+    <!-- main end -->
+
+    <!-- bomber start -->
+    <section class="bomber">
+
+        <div class="container bomber__container">
+
+            <div class="bomber-box">
+
+                <h2 class="bomber__title">SMS-BOMBER</h2>
+
+                <p class="bomber__status visually-hidden">Holat: <span>nomalum</span>.</p>
+
+                <p class="bomber__text">Yomon maqsadlarda ishlatilmasin. Biz bunga javob bermaymiz...!</p>
+
+                <form title="Bomber" class="form bomber-form">
+
+                    <label class="bomber__label" for="number" title="Telefon raqam">
+                        <span class="visually-hidden">Telefon raqam (901234567)</span>
+                        <input required type="tel" name="number" id="number" placeholder="Telefon raqam (901234567)" class="inp bomber__inp">
+                    </label>
+
+                    <label class="bomber__label" for="count" title="Sms miqdori">
+                        <span class="visually-hidden">Sms miqdori (max: 100)</span>
+                        <input required type="number" name="sms" id="count" placeholder="Sms miqdori (max: 100)" class="inp bomber__inp">
+                    </label>
+
+                    <label for="captcha">
+                        <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button>
+                    </label>
+
+                    <button type="submit" title="Bomber yuborish" aria-disabled="true" class="btn bomber__btn">Bomber yuborish</button>
+
+                </form>
+
+            </div>
+            
+        </div>
+
+    </section>
+    <!-- bomber end -->
+
+    <!-- social start -->
+    <section class="social visually-hidden">
+
+        <div class="container social__container">
+            
+            <div class="social-box">
+
+                <h2 class="social__title">Ijtimoiy tarmoqlar:</h2>
+    
+                <p class="social__text">SMS-BOMBER yangiliklaridan xabardor bo'lish uchun <b>TELEGRAM</b>dagi rasmiy saxifamizga a'zo bo'ling.</p>
+    
+                <a href="https://t.me/hackers_baza" class="btn social__btn">Ketdik...!</a>
+                
+            </div>
+
+        </div>
+
+    </section>
+    <!-- social end -->
+
+    <!-- script start -->
+    <script src="./js/app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
+    <!-- script end -->
+</body>
+</html>
